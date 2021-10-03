@@ -1,0 +1,31 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.l-container{
+    width: 100%;
+    max-width: 1344px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    padding: 2em;
+    background: #53575A;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: auto;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+.card{
+    background: white;
+}
+.card img{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}

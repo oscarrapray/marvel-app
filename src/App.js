@@ -1,11 +1,14 @@
+import React from 'react'
+import Heroes from './components/Heroes';
+import './css/estilos.css'
 
-
-function App() {
+const App = () =>{
   return (
-    <div>
-        <h2>Marvel - App</h2>
-     </div>
-   )
+    <div>     
+       <Heroes />
+    </div>
+    
+  )
 }
 
 export default App;
