@@ -18,14 +18,12 @@ const Heroes = () =>{
 
         <div className = 'container'>
             <div className = "l-container">
-                <h1>Lista de Super Heroes</h1>
-                <div className = "container-grid">
-                    {
-                        state.map(h =>(
+                <div className="container-card">
+                  {
+                        state.map(hero =>(
                             <Heroe 
-                                key = {h.id}
-                                title ={h.name}
-                                url={`${h.thumbnail.path}.${h.thumbnail.extension}`}
+                                key = {hero.id}
+                                data = {hero}
                             />
                         ))
                     }
