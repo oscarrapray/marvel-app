@@ -6,7 +6,7 @@ const Heroes = () =>{
     const [state,setState] = useState([])
 
     const consultarApi = async () =>{
-            const respuesta = await axios.get('http://gateway.marvel.com/v1/public/characters?ts=1&apikey=cc33eb821314e08e79183f46724d593e&hash=9507760c50ef007a5d386e426a48d5ea')
+            const respuesta = await axios.get('https://gateway.marvel.com/v1/public/characters?ts=1&apikey=cc33eb821314e08e79183f46724d593e&hash=9507760c50ef007a5d386e426a48d5ea')
             setState(respuesta.data.data.results)
     }
 
